@@ -1,8 +1,9 @@
 services:
   app:
-    build:
-      context: .
-      dockerfile: docker/php/Dockerfile
+    # build:
+    #   context: .
+    #   dockerfile: docker/php/Dockerfile
+    image: sahilguptamm1/laravel-postgres:1.0
     container_name: laravel_app
     working_dir: /var/www
     volumes:
